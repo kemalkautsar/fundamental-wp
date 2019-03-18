@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title><?php wp_title(''); ?></title>
+	<title><?php bloginfo('name'); ?></title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
