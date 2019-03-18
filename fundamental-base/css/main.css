@@ -1,0 +1,50 @@
+.menu {
+	background: rgba(38,50,74,1);
+	height: 48px;
+	color: #fff;
+}
+
+.menu a {
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.menu a:hover {
+	color: #fec56b;
+}
+
+.banner {
+	padding: 6rem 5%;
+	position: relative;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.banner:after {
+	content: "";
+	position: absolute;
+	background-image: url('../src/beach-golden-hour-grass-1192671.jpg');
+	background-size: cover;
+    background-position: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5; 
+}
+
+.page-title {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.content {
+	font-family: 'Lora', sans-serif;
+	font-size: 16px;
+}
