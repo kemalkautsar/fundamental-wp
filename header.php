@@ -24,10 +24,17 @@
     <div class="menu sticky-top">
         <div class="container">
             <nav class="menu-nav">
-				<a class="menu-nav-logo" href="#"><img src="#">image logo</a>
-                <a class="menu-nav-item active" href="#">Home</a>
-                <a class="menu-nav-item" href="#">About</a>  
-                <a class="menu-nav-item" href="#">Blog</a>      
+				<?php
+					wp_nav_menu( array(
+						'theme_location'  => 'primary',
+						'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+						'container'       => 'div',
+						'container_id'    => 'bs-example-navbar-collapse-1',
+						'menu_class'      => 'navbar-nav mr-auto',
+						'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					) );
+				?>
             </nav>
         </div>
 	</div>
