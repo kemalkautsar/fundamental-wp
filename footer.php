@@ -1,6 +1,6 @@
-<footer class="footer">
-        <div class="container">
-            footer
+	<footer class="footer">
+        <div class="container d-flex justify-content-center">
+            <span>&copy;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></span>
         </div>
 	</footer>
 	

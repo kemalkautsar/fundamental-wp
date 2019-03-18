@@ -2,7 +2,7 @@
 	
 	<section class="banner">
 		<div class="container d-flex justify-content-center">
-			<h1 class="page-title">Page Title</h1>
+			<h1 class="page-title"><?php bloginfo('name'); ?></h1>
 		</div>
 	</section>
 

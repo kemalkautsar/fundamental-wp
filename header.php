@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="menu">
+    <div class="menu sticky-top">
         <div class="container">
             <nav class="menu-nav">
 				<a class="menu-nav-logo" href="#"><img src="#">image logo</a>
