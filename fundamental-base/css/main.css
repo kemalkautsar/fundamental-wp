@@ -48,3 +48,10 @@
 	font-family: 'Lora', sans-serif;
 	font-size: 16px;
 }
+
+.content .main-content {
+	text-align: justify;
+
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
