@@ -7,14 +7,15 @@
 .menu a {
 	color:#fff;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 20px;
 	padding-left: 12px;
 	padding-right: 12px;
+
+	transition: all 0.5s ease;
 }
 
 .menu a:hover {
 	color: #fec56b;
+	text-decoration: none;
 }
 
 .banner {
