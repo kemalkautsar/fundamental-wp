@@ -1,5 +1,11 @@
 <div class="comment-post">
-	<h3 class="comment-post-title">Comments</h3>
+
+	<?php if (get_comments_number() > 0) { ?>
+		<h3 class="comment-post-title">Comments</h3>
+	<?php } else { ?>
+		<h3 class="comment-post-title">There are no comments yet. Start the conversation here!</h3>
+	<?php } ?>
+
 	<?php 
 		$args = array(
 			'walker'            => null,
@@ -11,7 +17,7 @@
 			'reply_text'        => 'Reply',
 			'page'              => '',
 			'per_page'          => '',
-			'avatar_size'       => 24,
+			'avatar_size'       => 38,
 			'reverse_top_level' => null,
 			'reverse_children'  => '',
 			'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
@@ -23,13 +29,11 @@
 
 		$comments_args = array(
 			// change the title of send button 
-			'label_submit'=>'Send',
-			// change the title of the reply section
-			'title_reply'=>'Join The Conversation!',
+			'label_submit'=>'Post Comment',
 			// remove "Text or HTML to be displayed after the set of comment fields"
 			'comment_notes_after' => '',
 			// redefine your own textarea (the comment body)
-			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+			'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" aria-required="true" placeholder="Comment"></textarea></p>',
 		);
 		
 		comment_form($comments_args);

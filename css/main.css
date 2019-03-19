@@ -133,6 +133,13 @@ p, div.wp-block-image, figure {
 	margin-bottom: 12px;
 }
 
+.comment-metadata>a>time {
+	color: #777;
+	font-style: italic;
+	font-size: 12px;
+	padding-right: 6px;
+}
+
 .comment-post-title, .comment-reply-title {
 	font-weight: 600;
 	margin-bottom: 12px;
@@ -149,23 +156,64 @@ p, div.wp-block-image, figure {
     border-radius: 5px;
 }
 
+.comment-body a{
+    color: #000;
+	transition: all 0.5s ease;
+	font-weight: 700;
+}
+
+.comment-body a:hover {
+	color: #f19300;
+	text-decoration: none;
+}
+
 .comment-author {
 	text-transform: capitalize;
 }
 
-.comment-reply-link {
-	font-family: 'Open Sans', sans-serif;
-    color: #000;
-	font-weight: 700;
-	transition: all 0.5s ease;
-	text-transform: uppercase;
-	font-size: 12px;
-    letter-spacing: 1.2px;
+.comment-author img {
+	border-radius: 50px;
 }
 
-.comment-reply-link:hover {
-	color: #f19300;
-	text-decoration: none;
+.comment-content {
+	padding: 12px 0;
+	color: #333;
+}
+
+.comment-reply-link, .comment-edit-link {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.2px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.comment-form-comment>textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 6px 24px;
+}
+
+.comment-respond .form-submit {
+    text-align: center;
+}
+
+.comment-respond .form-submit input {
+	font-size: 12px;
+    border-radius: 100px;
+    padding: 6px 24px;
+    background: #777;
+    color: #fff;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+	letter-spacing: 2.2px;
+	transition: all 0.3s ease;
+}
+
+.comment-respond .form-submit input:hover {
+	background: #4c4c4c;
 }
 
 
