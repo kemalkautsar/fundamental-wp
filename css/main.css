@@ -1,3 +1,13 @@
+p, div.wp-block-image, figure {
+	margin-bottom: 12px;
+}
+
+.wp-block-image>figure>figcaption, p:last-child {
+	margin-bottom: 0;
+}
+
+
+
 .menu {
 	background: rgba(38,50,74,1);
 	color: #fff;
@@ -27,6 +37,8 @@
     flex-direction: row;
 }
 
+
+
 .banner {
 	padding: 6rem 5%;
 	position: relative;
@@ -54,6 +66,8 @@
 	font-size: 36px;
 	text-transform: capitalize;
 }
+
+
 
 .content {
 	font-family: 'Lora', sans-serif;
@@ -105,6 +119,7 @@
 	text-transform: capitalize;
 }
 
+
 .blockquote {
 	padding-left: 24px;
 	border-left: 2px #777 solid;
@@ -112,8 +127,51 @@
 	font-style: italic;
 }
 
+
+.comment.parent {
+	border-bottom: 1px #777 solid;
+	margin-bottom: 12px;
+}
+
+.comment-post-title, .comment-reply-title {
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+.comment-post ul, .comment-post li {
+	list-style-type: none;
+}
+
+.comment-body {
+    margin-bottom: 12px;
+    padding: 12px 24px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.comment-author {
+	text-transform: capitalize;
+}
+
+.comment-reply-link {
+	font-family: 'Open Sans', sans-serif;
+    color: #000;
+	font-weight: 700;
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+	font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.comment-reply-link:hover {
+	color: #f19300;
+	text-decoration: none;
+}
+
+
+
 .footer {
 	background: #26324a;
-	color: #fec56b;
+	color: #fff;
 	padding: 24px;
 }

@@ -13,7 +13,8 @@
 		<?php is_front_page() ? bloginfo('description') : wp_title(); ?>
 	</title>
 	
-	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_stylesheet_uri(); ?>">

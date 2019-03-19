@@ -15,7 +15,7 @@
 						while (have_posts()) : the_post();
 				?>
 				<div class="content-post">
-					<h2 class="content-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<h2 class="content-post-title"><?php the_title(); ?></h2>
 					<div class="content-post-meta">
 						<?php the_time('j F Y'); ?> by <span class="content-post-author"><?php the_author(); ?></span>
 					</div>
@@ -24,8 +24,10 @@
 					<div class="content-post-featured-image" style="	background-image: url('<?php echo the_post_thumbnail_url(); ?>');">
 					</div>
 					<?php endif; ?>
-					<?php the_excerpt(); ?>
+					<?php the_content(); ?>
 				</div>
+
+				<?php comments_template(); ?>
 
 				<?php 
 					endwhile;
