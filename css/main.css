@@ -74,6 +74,16 @@
 	font-weight: 600;
 }
 
+.content-post-title>a{
+	color: #000;
+	transition: all 0.3s ease;
+}
+
+.content-post-title>a:hover{
+	color: #f19300;
+	text-decoration: none;
+}
+
 .content-post-meta {
 	color: #777;
 	font-style: italic;
