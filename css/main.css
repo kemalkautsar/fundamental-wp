@@ -66,6 +66,19 @@
 	padding-bottom: 48px;
 }
 
+.content-post {
+	margin-bottom: 48px;
+}
+
+.content-post-title {
+	font-weight: 600;
+}
+
+.content-post-meta {
+	color: #777;
+	font-style: italic;
+}
+
 .blockquote {
 	padding-left: 24px;
 	border-left: 2px #777 solid;
