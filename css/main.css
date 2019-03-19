@@ -52,6 +52,7 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 36px;
+	text-transform: capitalize;
 }
 
 .content {
@@ -66,7 +67,7 @@
 	padding-bottom: 48px;
 }
 
-.content-post {
+.content-post:not(:last-child) {
 	margin-bottom: 48px;
 }
 
@@ -96,7 +97,8 @@
 	height: 350px;
 	width: 100%;
 	background-size: cover;
-    background-position: center;
+	background-position: center;
+	margin-bottom: 12px;
 }
 
 .content-post-author {
