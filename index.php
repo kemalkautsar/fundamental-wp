@@ -17,10 +17,14 @@
 				<div class="content-post">
 					<h2 class="content-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<div class="content-post-meta">
-						<span class="content-post-date">11 January 2019</span> by <span class="content-post-author">Kemal</span>
+						<?php the_time('j F Y'); ?> by <span class="content-post-author"><?php the_author(); ?></span>
 					</div>
-					
-					<?php the_excerpt(); ?>
+
+					<?php if(has_post_thumbnail()) : ?>
+					<div class="content-post-featured-image" style="	background-image: url('<?php echo the_post_thumbnail_url(); ?>');">
+					</div>
+					<?php endif; ?>
+					<?php the_content(); ?>
 				</div>
 
 				<?php 

@@ -72,6 +72,8 @@
 
 .content-post-title {
 	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 3px;
 }
 
 .content-post-title>a{
@@ -87,6 +89,18 @@
 .content-post-meta {
 	color: #777;
 	font-style: italic;
+	margin-bottom: 12px;
+}
+
+.content-post-featured-image {
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+    background-position: center;
+}
+
+.content-post-author {
+	text-transform: capitalize;
 }
 
 .blockquote {
