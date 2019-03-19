@@ -25,6 +25,7 @@
 					</div>
 					<?php endif; ?>
 					<?php the_content(); ?>
+
 				</div>
 
 				<?php comments_template(); ?>

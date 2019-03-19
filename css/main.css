@@ -83,6 +83,8 @@ p, div.wp-block-image, figure {
 
 .content-post:not(:last-child) {
 	margin-bottom: 48px;
+	border-bottom: 1px #e3e3e3 solid;
+    padding-bottom: 12px;
 }
 
 .content-post-title {
@@ -129,8 +131,9 @@ p, div.wp-block-image, figure {
 }
 
 
+
 .comment.depth-1 {
-	border-bottom: 1px #777 solid;
+	border-bottom: 1px #e3e3e3 solid;
 	margin-bottom: 12px;
 }
 
@@ -195,7 +198,8 @@ p, div.wp-block-image, figure {
 }
 
 .comment-form-comment>textarea {
-    width: 100%;
+	width: 100%;
+	height: 200px;
     border-radius: 5px;
     border: 1px solid #e3e3e3;
     padding: 6px 24px;
